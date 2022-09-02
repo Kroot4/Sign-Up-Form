@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="/home/k2/Documents/TheOdinProject/Sign-Up-Form/images/odin-lined.png">
+                <p id="text">Fuck</p>
+            </div>
+        </div>
+        <div class="description">description</div>
+        <div class="form">
+            <form action="/home/k2/Documents/TheOdinProject/Sign-Up-Form/getInfo.html" method="get">
+
+                <div class="left">
+                    <label for="firstName">First Name</label>
+                    <input name="first_name" type="text" id="firstName"></input>
+
+                    <label for="email">Email</label>
+                    <input name="email" type="email" id="email"></input>
+
+                    <label for="password">Password</label>
+                    <input name="user_password" type="password" id="password"></input>
+                </div>
+
+                <div class="right">
+                    <label for="lastName">Last Name</label>
+                    <input name="last_name" type="text" id="lastName"></input>
+
+                    <label for="phone">Phone Number</label>
+                    <input name="phone_number" type="tel" id="phone"></input>
+
+                    <label for="confirmPass">Confirm Password</label>
+                    <input name="confirm_password" type="password" id="confirmPass"></input>
+                </div>
+
+                <input type="submit" id="submit-form" class="hidden"></input>
+                
+            </form>
+        </div>
+        <div class="signup">
+        </div>
+    </div>
+</body>
+</html>

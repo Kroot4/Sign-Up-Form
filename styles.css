@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Norse';
+    src: url(/home/k2/Documents/TheOdinProject/Sign-Up-Form/font/Norse-Bold.otf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container {
+    height: 99.5vh;
+    width: 99.4vw;
+    border: solid;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.description,
+.form,
+.signup {
+    grid-column: 3 / 6;
+}
+
+.description,
+.signup {
+    background-color: #EEEEEE;
+}
+
+.sidebar {    
+    background-image: url(/home/k2/Documents/TheOdinProject/Sign-Up-Form/images/yourname.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 1 / 3;
+    grid-row: 1 / 4;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.description {
+    grid-row: 1 / 2;
+}
+
+form,
+.form {
+    display: grid;
+}
+
+.form {
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+form {
+    column-gap: 5rem;
+    align-items: center;
+}
+
+.signup {
+    grid-row: 3 / 4;
+}
+
+.left {
+    grid-column: 1 / 2;
+}
+
+.right {
+    grid-column: 2 / 3;
+}
+
+.logo {
+    background-color: rgb(0,0,0,7);
+    opacity: .4;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+
+img{
+    height: 8rem;
+}
+
+p#text {
+    font-family:'Norse','Times New Roman', Times, serif;
+    color: white;
+    font-size: 8rem;
+    opacity: 1;
+}
