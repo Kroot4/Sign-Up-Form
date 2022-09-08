@@ -63,12 +63,14 @@ table {
 
 .description,
 .form,
-.signup {
+.createAccount {
     grid-column: 3 / 6;
+    box-sizing: border-box;
+    padding: 2rem;
 }
 
 .description,
-.signup {
+.createAccount {
     background-color: #EEEEEE;
 }
 
@@ -85,6 +87,9 @@ table {
 
 .description {
     grid-row: 1 / 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; 
 }
 
 form,
@@ -102,8 +107,9 @@ form {
     align-items: center;
 }
 
-.signup {
+.createAccount {
     grid-row: 3 / 4;
+    grid-column: 3 / 6;
 }
 
 .left {
@@ -128,9 +134,16 @@ img{
     height: 8rem;
 }
 
-p#text {
+p#logoText {
     font-family:'Norse','Times New Roman', Times, serif;
     color: white;
     font-size: 8rem;
     opacity: 1;
+}
+
+button {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+
 }
